@@ -1,0 +1,254 @@
+/*=============== BREAKPOINTS ===============*/
+/* For  XX-Large devices */
+@media (max-width: 1536px) { 
+  .container{
+    max-width: 1280px;
+  }
+ }
+
+/* For  X-Large devices */
+@media (max-width: 1280px) { 
+  .container{
+    max-width: 1024px;
+  }
+ 
+  .hero .hero-header{
+    width: 60%;
+    padding: 80px 40px;
+  }
+  #hero .hero-header h1 {
+    font-size: 2.75rem;
+  }
+
+.hero img{
+  padding-right: 40px;
+
+}
+#hero .hero-header h4{
+  margin-bottom: 40px;
+}
+#products .product-container{
+  justify-content: center;
+  gap: 12px;
+}
+
+#features {
+  justify-content: center;
+  gap: 20px;
+}
+#sp-banner .sp-banner-box {
+  width: 48%;
+  align-items:center;
+}
+#sp-banner .sp-banner-box.banner-box-5 {
+  width: 100%;
+}
+#sp-banner .sp-banner-box h2{
+  font-size: 2rem;
+}
+#sp-banner .sp-banner-box h3{
+  font-size: 1.25rem;
+}
+#newsletter{
+  flex-direction: column;
+}
+#newsletter .newstext{
+  width: 100%;
+  margin-bottom: 24px;
+}
+#newsletter .form {
+width: 100%;
+}
+/* For Large devices */
+@media (max-width: 1024px) { 
+  .container{
+    max-width: 768px;
+  }
+  .hero .hero-header {
+    width: 100%;
+}
+#hero .hero-header h1 {
+  font-size: 3.4rem;
+}
+#hero{
+  flex-direction: column;
+}
+
+#hero .hero-img {
+  object-fit: contain;
+  height: auto;
+  padding-right:0;
+  max-width: 80%;
+}
+ 
+#banner {
+padding: 0 40px;
+}
+#sm-banner {
+  flex-direction: column;
+  gap: 32px;
+  
+}
+#sp-banner .sp-banner-box{
+  align-items: flex-start;
+}
+}
+
+/* For medium devices */ 
+@media (max-width: 768px) { 
+  .container{
+    max-width: 640px;
+  }
+  .section-p1{
+    padding: 20px;
+  }
+ #header{
+  padding: 10px 30px;
+ }
+ h1{
+  font-size: 32px;
+ }
+ h2{
+  font-size: 28px;
+ }
+ #hero{
+  padding: 0 20px;
+ }
+ .hero img {
+ display: none;
+}
+ #features .feature {
+  width: 140px;
+  margin: 0 0 15px 0;
+}
+#features {
+  justify-content: space-between;
+}
+#products .product {
+  width: 48%;
+}
+#banner {
+  height: 40vh;
+}
+#sm-banner .banner-box{
+  height: 40vh;
+}
+#sm-banner .banner-box-2 {
+  margin-top: 20px;
+}
+#sp-banner {
+  padding: 0 20px;
+}
+
+#sp-banner .sp-banner-box {
+  width: 100%;
+}
+#newsletter{
+  padding: 40px 20px;
+}
+#newsletter .form {
+  width: 100%;
+}
+footer .copyright {
+  text-align: start;
+}
+}
+ /* For small devices */
+ @media (max-width: 640px) { 
+  .container{
+    max-width: 475px;
+  }
+  .section-p1{
+    padding: 20px;
+  }
+#navbar{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: flex-start;
+  position: fixed;
+  top:0;
+  right:-300px;
+  width: 300px;
+  height: 100vh;
+  padding: 80px 0 0 10px;
+  background-color: #10375c;
+  box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+ #navbar.active{
+  right: 0px;
+ }
+#navbar li{
+  margin-bottom: 25px;
+}
+#mobile{
+  display: flex;
+  align-items: center;
+}
+#mobile i{
+  color: #fff;
+  font-size: 24px;
+  padding-left: 20px;
+}
+.lg-bag{
+  display: none;
+  }
+#close{
+  display: initial;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #fff;
+  font-size: 24px;
+}
+
+#hero{
+  height: 70vh;
+ background-position: top 30% right 50%;
+}
+.hero-header{
+  text-align: left;
+  width: 50%;
+  height: auto;
+}
+#features {
+  justify-content: center;
+}
+#features .feature {
+  margin: 15px;
+}
+#products .product-container {
+  justify-content: center;
+}
+
+#products .product {
+  margin: 15px;
+}
+
+#banner {
+  height: 30vh;
+}
+
+#sm-banner .banner-box {
+  min-width:100%;
+  height: 30vh;
+  margin-bottom: 20px;
+}
+
+#sp-banner {
+  padding: 0 20px;
+}
+
+#sp-banner .sp-banner-box {
+  width: 100%;
+}
+#newsletter .form {
+  width: 70%;
+}
+}
+@media (max-width: 475px) { 
+  .container{
+    width: 100%;
+  }
+}
