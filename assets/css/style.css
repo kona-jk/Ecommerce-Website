@@ -90,6 +90,9 @@ button {
 .section-p2 {
   padding: 40px;
 }
+.pl-40{
+  padding-left: 40px;
+}
 .mb-12{
   margin-bottom: 12px;
 }
@@ -677,10 +680,216 @@ margin-right: 8px;
 
 
 
-/* For large devices */
+/* Blog Page */
+#page-header.blog-header {
+  background-image: url(/assets/img/banner/b19.jpg);
+}
+
+#page-header.blog-header h2,p{
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #1a1a1a;
+  padding: 4px;
+}
+
+#blog{
+  padding: 140px 140px 0 140px;
+}
+#blog .blog-box{
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+#blog .blog-img{
+  width:50%;
+  margin-right: 40px;
+}
+
+#blog .blog-img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+#blog .blog-details{
+width: 50%;
+}
+#blog .blog-details a{
+  font-size: 14px;
+  font-weight: 700;
+  color: #222;
+  position: relative;
+  text-transform: capitalize;
+}
+#blog .blog-details a::after{
+  content: "";
+  width:40px;
+  height: 1px;
+  background-color: #222;
+  position:absolute;
+  top: 6px;
+  right: -50px;
+}
+#blog .blog-details a:hover{
+  color: var(--first-color-alt);
+}
+#blog .blog-details a:hover::after{
+  background-color: var(--first-color-alt);
+}
+#blog .blog-box h2{
+  position: absolute;
+  top: -50px;
+  left: 0;
+  font-size: 5.5rem;
+  font-weight: 400;
+  color: #c9cbce;
+  z-index: -9;
+}
 
 
-/* Alternative code, for larger screens */
+/* About page */
+
+#page-header.about-header{
+  background-image:url("/assets/img/about/banner.png");
+}
+#page-header .about-header h4,h6{
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--first-color-alt);
+}
+#about-us{
+  display: flex;
+  align-items: center;
+}
+#about-us img{
+  width: 50%;
+  height: auto;
+}
+#about-app{
+  text-align: center;
+}
+#about-app h2{
+  text-transform: capitalize;
+  font-size: 2.5rem;
+}
+#about-app .app-video{
+  width: 70%;
+  height: auto;
+  margin: 36px auto 0 auto;
+}
+#about-app .app-video video{
+width: 100%;
+height: 100%;
+border-radius: 20px;
+}
+/* contact page */
+#page-header.contact-header{
+  background-image: url(/assets/img/banner/b16.jpg);
+}
+#page-header.contact-header h4, p{
+  color: var(--first-color);
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+#contact-info{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+#contact-info .info-details{
+  width: 40%;
+  margin-right: 40px;
+}
+#contact-info .info-details span,h4,h6,
+#form-details form span,h4{
+  text-transform: capitalize;
+  color: var(--second-color);
+}
+#contact-info .info-details span,h6,
+#form-details form span{
+  font-size: 1.5rem;
+}
+#contact-info .info-details h4{
+  font-size: 1.2rem;
+  padding: 20px 0;
+  font-weight: 400;
+}
+#contact-info .info-details,p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #222;
+  padding-left: 12px;
+  margin: 0;
+
+}
+#contact-info .contact-address li{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--second-color);
+  padding: 10px 0;
+}
+#contact-info .map{
+  width: 55%;
+  height: auto;
+}
+#contact-info .map iframe{
+  width: 100%;
+  height: auto;
+}
+#form-details{
+  display: flex;
+  justify-content:space-between;
+  margin:28px;
+  padding: 80px;
+  border: 1px solid #e1e1e1;
+}
+#form-details form{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#form-details form input,
+textarea{
+  width: 100%;
+  padding: 12px 16px;
+  outline: none;
+  margin-bottom: 20px;
+  border:1px solid #e1e1e1;
+}
+#form-details form button{
+ background-color: var(--second-color);
+ color: #fff;
+}
+#form-details.people,.people-info{
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+}
+#form-details.people,.people-info img{
+  width: 15%;
+  height: auto;
+  object-fit: cover;
+  margin-right: 12px;
+}
+#form-details.people,.people-info p{
+  margin: 0;
+  font-size: 12px;
+  line-height: 150%;
+}
+#form-details.people,.people-info p span{
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+/* cart page */
+
+
 
 
 

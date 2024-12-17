@@ -247,8 +247,9 @@ footer .copyright {
   width: 70%;
 }
 }
-@media (max-width: 475px) { 
-  .container{
+
+@media (max-width: 475px) {
+  .container {
     width: 100%;
   }
 }
